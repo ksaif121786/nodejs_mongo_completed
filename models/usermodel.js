@@ -5,13 +5,15 @@ const UserSchema = new mongoose.Schema({
         default: '/uploads/user/default.png'
     },
     firstname: {
-        type: String
+        type: String,
+        required: true
     },
     lastname: {
         type: String
     },
     email: {
-        type: String
+        type: String,
+        
     },
     password: {
         type: String
